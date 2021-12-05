@@ -33,11 +33,7 @@ html::-webkit-scrollbar-track {
     }
 
     .wrap-main h1{
-        margin-top: 30vmin;
-        font-size: 5em;
-    }
-    .text{
-        font-size: 2vmax;
+        font-size: 500%;
     }
 }
 
