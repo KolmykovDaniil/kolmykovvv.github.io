@@ -46,8 +46,9 @@ let maxWidth = 1500
 //Модал - экран затемнения
 let modal = document.getElementById('myModal');
 modal.onclick = function(){
-    modal.style.display = "none";
-    enableScroll();
+    if (document.documentElement.clientWidth+16 > maxWidth)
+      modal.style.display = "none";
+      enableScroll();
 }
 //Картинка в модале
 let modalImg = document.getElementById("modal-img");
