@@ -46,18 +46,20 @@ let maxWidth = 1500
 //Модал - экран затемнения
 let modal = document.getElementById('myModal');
 modal.onclick = function(){
-    if (document.documentElement.clientWidth+16 > maxWidth)
+    if (document.documentElement.clientWidth+16 > maxWidth){
       modal.style.display = "none";
       enableScroll();
+    }
 }
 //Картинка в модале
 let modalImg = document.getElementById("modal-img");
 let images = document.querySelectorAll(".portfolio-img");
 images.forEach((img) => {
     img.onclick = function(){
-        if (document.documentElement.clientWidth+16 > maxWidth)
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            disableScroll();
+        if (document.documentElement.clientWidth+16 > maxWidth){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          disableScroll();
+        }
     }
 })
