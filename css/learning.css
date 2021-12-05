@@ -106,5 +106,6 @@ html::-webkit-scrollbar-track {
 
 .card img{
     width: 50%;
+    max-width: 80vw;
     object-fit: contain;
 }
