@@ -104,6 +104,14 @@ html::-webkit-scrollbar-track {
     border-radius: 10px;
 }
 
+#video{
+    width: 70vw;
+    margin: auto;
+    height: 40vw;
+    max-width: 80vw;
+    object-fit: contain;
+}
+
 .card img{
     width: 50%;
     max-width: 80vw;
