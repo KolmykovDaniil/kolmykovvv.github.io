@@ -1,0 +1,110 @@
+html{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 1em;
+    background-color: black;
+}
+ 
+html::-webkit-scrollbar-thumb {
+    background: rgba(90, 90, 90);
+}
+  
+html::-webkit-scrollbar-track {
+    background: black;
+}
+
+
+.header{
+    background-color: black;
+}
+
+.wrap-main{
+    margin-top: 8vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 1500px) {
+    .wrap-main{
+        margin-top: 14vmin;
+    }
+}
+
+.card{
+    margin: 2vmin;
+    display: flex;
+    flex-direction: row;
+    max-width: 70vw;
+    padding: 3vmax 2vmax;
+    background-color: #111111;
+    border-radius: 1vmax;
+    transition: all .5s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.card2{
+    margin: 2vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-height: 80vh;
+    width: 90vw;
+    padding: 3vmax 2vmax;
+    background-color: #111111;
+    border-radius: 1vmax;
+    transition: all .5s ease-in-out;
+}
+
+.card2 .wrap-text{
+    width: 100%;
+}
+
+#unique{
+    font-size: 3vw;
+    text-transform: uppercase;
+    text-align: center;
+    width: 80vw;
+}
+
+.text{
+    padding: 3vh 1vw;
+}
+
+.wrap-text{
+    font-size: 1.6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    padding: 0 1vmax;
+}
+
+.wrap-text h1{
+    font-size: 4vw;
+}
+
+.wrap-text a h1{
+    /* background-color: #222222;
+    border-radius: 1vmax; */
+    padding: 0.5vmax 1vmax;
+    font-size: 3vw;
+    color: white;
+    background-color: #910000;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.card img{
+    width: 50%;
+    object-fit: contain;
+}

@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <title>Kolmykov</title>
+    <link rel="icon" type="image/x-icon" href="resources/icons/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/learning.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/transition.js"></script>
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+      </script>
+      <script type="text/javascript"
+        src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      </script>
+</head>
+<body>
+    <header class = "header sticky-top">
+        <a href="index.html" class = "header-element nav-link transition"><img src="resources/icons/favicon.ico" class="nav-img" alt="logo"></a>
+        <nav class = "nav-panel header-element">
+            <a href="index.html" class = "header-element nav-link transition">Главная</a>
+            <div class="nav-separator">~</div>
+            <a href="learning.html" class = "header-element nav-link transition">Обучение</a>
+            <div class="nav-separator">~</div>
+            <a href="portfolio.html" class = "header-element nav-link transition">Портфолио</a>
+            <div class="nav-separator">~</div>
+            <a href="contacts.html" class = "header-element nav-link transition">Контакты</a>
+        </nav>
+    </header>
+    <div class="wrap-main">
+                <h1 id="unique">КРИВЫЕ БЕЗЬЕ</h1>
+        <div class="card2">
+            <div class="wrap-text">
+                <p class="text">Кривы́е Безье́ — типы кривых, предложенные в 60-х годах XX века независимо друг от друга Пьером Безье из автомобилестроительной компании «Рено» и Полем де Кастельжо из компании «Ситроен», где применялись для проектирования кузовов автомобилей.</p>
+            </div>
+        </div>
+        <div class="card2">
+            <div class="wrap-text">
+                <p class="text">Несмотря на то, что открытие де Кастельжо было сделано несколько ранее Безье (1959), его исследования не публиковались и скрывались компанией как производственная тайна до конца 1960-х.
+
+                    Кривая Безье является частным случаем многочленов Бернштейна, описанных советским математиком Сергеем Натановичем Бернштейном в 1912 году.
+                    
+                    Впервые кривые были представлены широкой публике в 1962 году французским инженером Пьером Безье, который, разработав их независимо от де Кастельжо, использовал их для компьютерного проектирования автомобильных кузовов. Кривые были названы именем Безье, а именем де Кастельжо назван разработанный им рекурсивный способ определения кривых (алгоритм де Кастельжо).</p>
+            </div>
+        </div>
+        <div class="card2">
+            <img src="resources/learning/bezier.png" alt="">
+        </div>
+        <div class="card2">
+            <div class="wrap-text">
+                <p class="text">When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
+                    $$ \begin{array}{rcll}
+                    y & = & x^{2}+bx+c\\
+                      & = & x^{2}+2\times\dfrac{b}{2}x+c\\
+                      & = & \underbrace{x^{2}+2\times\dfrac{b}{2}x+\left(\frac{b}{2}\right)^{2}}-
+                          {\left(\dfrac{b}{2}\right)^{2}+c}\\
+                      &  & \qquad\left(x+{\dfrac{b}{2}}\right)^{2}\\
+                      & = & \left(x+\dfrac{b}{2}\right)^{2}-\left(\dfrac{b}{2}\right)^{2}+c 
+                      & \left|+\left({\dfrac{b}{2}}\right)^{2}-c\right.\\
+                        y+\left(\dfrac{b}{2}\right)^{2}-c & = & \left(x+
+                        \dfrac{b}{2}\right)^{2} & \left|\strut(\textrm{vertex form})\right.\\
+                    y-y_{S} & = & (x-x_{S})^{2}\\
+                    S(x_{S};y_{S}) & \,\textrm{or}\end{array} $$
+                    </p>
+            </div>
+        </div>
+        <div class="card2">
+            <div class="wrap-text">
+                <p class="text">Спасибо за внимание!!!</p>
+            </div>
+        </div>
+    </div>
+    <footer class="sticky-bottom footer">
+        <a href="https://instagram.com/kolmykovvv" class="nav-link"><img src="resources/icons/inst-icon.png" class="contacts-icon" alt="instagram"></a>
+        <a href="https://vk.com/kolmykovvv" class="nav-link"><img src="resources/icons/vk-icon.png" class="contacts-icon" alt="ВКонтакте"></a>
+        <a href="https://telegram.me/kolmykovvv" class="nav-link"><img src="resources/icons/tg-icon.png" class="contacts-icon" alt="Telegram"></a>
+    </footer>
+</body>
+</html>
