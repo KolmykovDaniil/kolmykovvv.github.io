@@ -40,7 +40,7 @@ function enableScroll() {
 }
 //Функции взяты с сайта: https://stackoverflow.com/questions/4770025/how-to-disable-scrolling-temporarily
 
-
+//Идея: https://stackoverflow.com/questions/68890930/my-image-modal-isnt-working-after-changing-from-id-to-class
 //максимальная ширина экрана, при которой работает анимация
 let maxWidth = 1500
 //Модал - экран затемнения
