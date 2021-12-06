@@ -45,6 +45,7 @@ function enableScroll() {
 let maxWidth = 1500
 //Модал - экран затемнения
 let modal = document.getElementById('myModal');
+//при нажатии на модал - закрываем окно зума для изображения
 modal.onclick = function(){
     if (document.documentElement.clientWidth+16 > maxWidth){
       modal.style.display = "none";
@@ -53,9 +54,12 @@ modal.onclick = function(){
 }
 //Картинка в модале
 let modalImg = document.getElementById("modal-img");
+//все изображения на странице
 let images = document.querySelectorAll(".portfolio-img");
+//для каждого изображения биндим логику действий при нажатии на него
 images.forEach((img) => {
     img.onclick = function(){
+      //если соответствующая ширина экрана - затемняем фон, показывая модал, выводим картинку и отключаем управление страницей
         if (document.documentElement.clientWidth+16 > maxWidth){
           modal.style.display = "block";
           modalImg.src = this.src;
